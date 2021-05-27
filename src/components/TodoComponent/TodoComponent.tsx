@@ -6,7 +6,7 @@ interface TodoComponentProps {
   todo: Todo;
   onClick: () => void;
 }
-function TodoComponent(props: TodoComponentProps) {
+export default function TodoComponent(props: TodoComponentProps) {
   const { todo, onClick } = props;
   console.log('render');
   return (
@@ -15,5 +15,3 @@ function TodoComponent(props: TodoComponentProps) {
     </TodoWrapper>
   );
 }
-
-export default React.memo(TodoComponent);
